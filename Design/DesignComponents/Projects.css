@@ -1,0 +1,93 @@
+.project_content {
+  height: 67vh;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.project_list li {
+  background-color: transparent;
+  padding-left: 0;
+  border-bottom: 1px solid var(--color-dark) !important;
+}
+
+.project_list li a {
+  position: relative;
+  color: var(--color-dark);
+  padding-left: 0;
+  line-height: 28xp;
+}
+
+.project {
+  position: relative;
+}
+
+.project:not(:last-child) {
+  border-bottom: 1px solid var(--color-dark);
+}
+
+.project a {
+  color: var(--color-dark);
+  line-height: 79px;
+  text-decoration: none;
+  cursor: url("../../../assets/images/pointer.png"), auto;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+
+.project a:hover {
+  color: var(--color-brown);
+  text-decoration: none;
+}
+
+.projectImg {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  display: none;
+  /* transition: all 0.5s linear; */
+}
+
+.project:hover .projectImg {
+  display: block;
+  z-index: 9;
+  left: 0;
+  top: 0;
+}
+
+/* END PROJECTS */
+
+/* PROJECT DETAILS */
+
+.project_detials li {
+  background-color: transparent;
+  padding-left: 0;
+  border-bottom: 1px solid var(--color-dark) !important;
+  padding: 0;
+}
+
+.project_detials li a {
+  position: relative;
+  color: var(--color-dark);
+  padding-left: 0;
+  line-height: 28xp;
+}
+
+.project_detials li a.active::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background: var(--color-dark);
+  left: -40px;
+  bottom: 16px;
+}
+
+table tr:first-child td {
+  border-top: 0;
+}
+
+table td {
+  border: 1px solid var(--color-dark);
+  border-left: 0;
+  border-right: 0;
+}

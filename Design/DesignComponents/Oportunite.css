@@ -1,0 +1,21 @@
+.contact_content {
+  height: 67vh;
+}
+
+.contact_list li {
+  background-color: transparent;
+  padding-left: 0;
+  border-bottom: 1px solid var(--color-dark) !important;
+}
+
+.contact_list li a {
+  position: relative;
+  color: var(--color-dark);
+  padding-left: 0;
+  line-height: 28xp;
+}
+
+.contact_content a {
+  color: var(--color-dark);
+  text-decoration: underline;
+}

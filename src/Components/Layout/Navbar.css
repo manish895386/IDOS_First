@@ -1,0 +1,215 @@
+.logo {
+  position: absolute;
+}
+.menu {
+  position: absolute;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+.menu a {
+  color: var(--color-dark);
+}
+.logo a {
+  color: var(--color-dark);
+}
+
+.top {
+  top: -22.5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bottom {
+  /* bottom: -20.1px;
+  left: 50%;
+  transform: translateX(-50%); */
+  bottom: -19.5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.entire {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.propos {
+  top: -25px;
+  left: 0;
+}
+.propos a:active {
+  color: var(--color-green);
+}
+.setPropos {
+  top: -10px;
+  /* left: 0px; */
+  text-transform: uppercase;
+  background: linear-gradient(to bottom, #000000 50%, transparent 50%);
+  /* background: -webkit-linear-gradient(to bottom, #000000 50%, transparent 50%); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact {
+  bottom: -25px;
+  left: 0;
+}
+.contact a:active {
+  color: var(--color-green);
+}
+.setContact {
+  bottom: -10px;
+  /* z-index: -1; */
+  text-transform: uppercase;
+  background: linear-gradient(to bottom, transparent 50%, #000000 50%);
+  /* background: -webkit-linear-gradient(to bottom, transparent 50%, #000000 50%); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.setContact:hover {
+  z-index: 1;
+}
+.projects {
+  top: -25px;
+  right: 0;
+}
+.projects a:active {
+  color: var(--color-green);
+}
+.setProjects {
+  top: -10px;
+  /* left: 0px; */
+  text-transform: uppercase;
+  background: linear-gradient(to bottom, #000000 50%, transparent 50%);
+  /* background: -webkit-linear-gradient(to bottom, #000000 50%, transparent 50%); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.opportunite {
+  bottom: -25px;
+  right: 0;
+}
+.opportunite a:active {
+  color: var(--color-green);
+}
+.setOportunite {
+  bottom: -15px;
+  /* z-index: -1; */
+  text-transform: uppercase;
+  background: linear-gradient(to bottom, transparent 50%, #000000 50%);
+  /* background: -webkit-linear-gradient(to bottom, transparent 50%, #000000 50%); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.setPropos a,
+.setOportunite a,
+.setProjects a,
+.setContact a {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.menu a:hover {
+  color: var(--color-green);
+}
+.setPropos:hover,
+.setOportunite:hover,
+.setProjects:hover,
+.setContact:hover {
+  background: none;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: var(--color-green);
+}
+
+.hideOpportunite {
+  top: -10px;
+  left: 0px;
+}
+
+/* Mobile Menu */
+.mobile_menu {
+  position: absolute;
+  right: 0;
+  top: -25px;
+  display: none;
+  transition: all 0.5s linear;
+}
+
+.mobile_menu_links {
+  background: var(--color-dark);
+}
+
+.mobile_menu_links_light {
+  background: #ffffff;
+}
+
+.mobile_menu_links,
+.mobile_menu_links_light {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 999;
+  right: -150%;
+  top: 0px;
+  transition: all 0.5s linear;
+}
+
+.active_menu {
+  right: 0% !important;
+}
+
+.menu_links {
+  width: calc(100% - 104px);
+  float: right;
+  margin-top: 30px;
+}
+
+.mobile_menu_links a {
+  color: var(--color-white);
+  border: 1px solid var(--color-white);
+}
+
+.mobile_menu_links_light a {
+  color: var(--color-dark);
+  border-bottom: 1px solid var(--color-dark);
+}
+.mobile_menu_links_light a:first-child {
+  border-top: 1px solid var(--color-dark);
+}
+.mobile_menu_links a,
+.mobile_menu_links_light a {
+  font-size: 33px;
+  text-transform: uppercase;
+  border-left: 0;
+  border-right: 0;
+}
+
+.menu_address {
+  position: absolute;
+  bottom: 20px;
+  width: calc(100% - 104px);
+  float: right;
+  right: 0;
+}
+
+.menu_address ul li {
+  color: var(--color-white);
+  border: 1px solid var(--color-white);
+}
+
+.mobile_menu_links_light .menu_address ul li {
+  color: var(--color-dark);
+  border-bottom: 1px solid var(--color-dark);
+}
+.mobile_menu_links_light .menu_address ul li:first-child {
+  border-top: 1px solid var(--color-dark);
+}
+.menu_address ul li,
+.mobile_menu_links_light .menu_address ul li {
+  border-left: 0;
+  border-right: 0;
+}
+
+.mobile_Icon {
+  transform: rotate(45deg);
+  color: #ffffff;
+}

@@ -1,0 +1,362 @@
+@font-face {
+  font-family: "ParisSkyline-M";
+  src: 
+    /* Super Modern Browsers */ url("assets/fonts/NewParisSkyline-Medium-WebS.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */
+      url("assets/fonts/NewParisSkyline-Medium-WebS.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+      url("assets/fonts/NewParisSkyline-Medium-WebS.svg#svgFontName")
+      format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: "ParisSkyline-XL";
+
+  src: 
+    /* Super Modern Browsers */ url("assets/fonts/NewParisSkyline-Medium-WebXL.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */
+      url("assets/fonts/NewParisSkyline-Medium-WebXL.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+      url("assets/fonts/NewParisSkyline-Medium-WebXL.svg#svgFontName")
+      format("svg");
+  /* Legacy iOS */
+}
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.collapsed {
+  width: 100% !important;
+  padding: 0 50px 10px !important;
+}
+
+@media (max-width: 767.98px) {
+  /* Common Page */
+  .mobile_menu {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  /* Landing Page */
+  .img-fluid-custome {
+    max-width: initial;
+    height: auto;
+    width: auto;
+  }
+
+  /* End Landing Page */
+  /* About US */
+  .content_main {
+    padding: 15px 0;
+  }
+
+  .card {
+    background: transparent;
+  }
+
+  .about_content {
+    font-size: 25px;
+    font-weight: bold;
+    height: 50vh;
+    padding-left: 50px;
+  }
+
+  .about_content p {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 22px;
+  }
+
+  .about_content_michel p {
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 22px;
+  }
+
+  [data-toggle="collapse"]:before {
+    left: 45px;
+    top: 29px;
+  }
+
+  /* End About US */
+  /* Contact Us */
+  .contact_content {
+    height: 50vh;
+    padding-left: 56px;
+  }
+
+  /* End Contact Us */
+  /* Projects */
+  .mobileProject {
+    position: relative;
+    min-height: 69px;
+  }
+  .mobileProject:not(:first-child) {
+    border-top: 1px solid var(--color-dark);
+  }
+  .mobileProject:first-child {
+    border-top: 1px solid var(--color-dark);
+  }
+  .mobileProject:last-child {
+    border-bottom: 1px solid var(--color-dark);
+  }
+  .projectMobLink a {
+    color: var(--color-dark);
+    text-decoration: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+  }
+
+  .mobileProject .collapsed {
+    width: auto !important;
+    padding: 0 !important;
+  }
+  .projectImgMob {
+    padding: 8px 0 12px;
+    text-align: right;
+    width: 100%;
+    /* min-height: 140px; */
+  }
+  .mobName {
+    position: absolute;
+    /* left: 0; */
+    bottom: 10px;
+    font-size: 18px;
+    width: 100%;
+  }
+  .mobileScroll {
+    height: 73vh;
+    overflow-y: scroll;
+  }
+
+  .mobileProject [data-toggle="collapse"]:before {
+    display: none;
+  }
+
+  /* End Projects */
+  /* Project Details */
+  .project_details_mobile {
+    height: 72vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  .project_mob_table td:first-child {
+    font-size: 12px;
+    /* width: 60% !important; */
+  }
+  .project_mob_table {
+    width: 100% !important;
+  }
+  .project_mob_image {
+    height: 300px;
+    width: 200px;
+  }
+  .mobileScroll {
+    height: 73vh;
+    overflow-y: scroll;
+  }
+  .mobileProject {
+    position: relative;
+    min-height: 69px;
+  }
+  .projectMobLink {
+    text-decoration: none;
+    color: var(--color-dark);
+    position: absolute;
+    left: 0;
+  }
+
+  .projectMobLink .a:hover .a:active {
+    text-decoration: none;
+    color: var(--color-dark);
+    position: absolute;
+    left: 0;
+  }
+  .contact_content .fz35 {
+    font-size: 22px !important;
+  }
+  .contact_content a {
+    text-decoration: none !important;
+  }
+
+  /* End Project Details */
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  /* Common Page */
+  .App {
+    padding: 40px 20px;
+  }
+  .changeBorder {
+    background: #000000;
+  }
+
+  .mobile_menu {
+    display: block !important;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .mobileScroll {
+    height: 73vh;
+    overflow-y: scroll;
+  }
+
+  /* Landing Page */
+  .img-fluid-custome {
+    max-width: initial;
+    height: -webkit-fill-available;
+    width: auto;
+  }
+
+  /* End Landing Page */
+  /* About US */
+  .content_main {
+    padding: 40px 0;
+  }
+  .ul_history li span {
+    font-size: 18px !important;
+    display: block;
+    min-width: 45px;
+  }
+  .ul_history li {
+    margin-bottom: 20px;
+  }
+  .card {
+    background: transparent;
+  }
+
+  .about_content {
+    font-size: 25px;
+    font-weight: bold;
+    height: 44vh;
+    padding-left: 40px;
+    /* border-bottom: 1px solid #000; */
+  }
+
+  .about_content p {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 22px;
+  }
+
+  [data-toggle="collapse"]:before {
+    left: 40px !important;
+    top: 12px !important;
+  }
+
+  /* End About US */
+  /* Contact Us */
+  .contact_content {
+    height: 50vh;
+    padding-left: 56px;
+  }
+  .blackBg {
+    background: var(--background-color) !important;
+  }
+  .mobileScroll {
+    height: 73vh;
+    overflow-y: scroll;
+  }
+}
+
+@media (min-width: 1200px) {
+  .img-fluid-custome {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* @media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .about_content p {
+      letter-spacing: -0.2px !important;
+      font-size: 16px !important;
+ 
+    }
+  }
+} */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* Safari  */
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .about_content p {
+      letter-spacing: -0.9998px !important;
+    }
+  }
+}
+@media (max-width: 374px) {
+  .mobile_menu_links_light a,
+  .mobile_menu_links a {
+    font-size: 22px;
+  }
+}
+/* ----------- iPad Pro ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .mobile {
+    display: none !important;
+  }
+  .desktop {
+    display: block !important;
+  }
+}
+
+/* Portrait */
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .mobile {
+    display: block !important;
+  }
+  .desktop {
+    display: none !important;
+  }
+}
+
+/* Landscape */
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .mobile {
+    display: none !important;
+  }
+  .desktop {
+    display: block !important;
+  }
+}
+
+.project_mob_table a {
+  color: var(--color-green);
+}
